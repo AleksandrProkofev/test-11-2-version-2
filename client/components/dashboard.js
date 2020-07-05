@@ -1,20 +1,16 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-import Head from './head'
-
-const Dummy = () => {
+const Dashboard = () => {
   return (
     <div>
-      <Head title="Hello" />
-      <div className="flex items-center justify-center h-screen">
-        <div className="bg-indigo-800 text-white font-bold rounded-lg border shadow-lg p-10">
-          This is dummy component
-        </div>
-      </div>
+      <div id="title"> Dashboard </div>
+      <Link to="./dashboard/profile/ed9b11af-7836-43aa-beda-eba2770c68ec"> Go To Profile <br /> </Link>
+      <Link to="./dashboard"> Go To Root </Link>
     </div>
   )
 }
 
-Dummy.propTypes = {}
+Dashboard.propTypes = {}
 
-export default Dummy
+export default Dashboard
